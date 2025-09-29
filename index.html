@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/Calculator-icon.png">
+
+    <title>Calaulator</title>
+</head>
+
+<body>
+
+    <div class="calculator-container">
+        <input readonly id="Result">
+
+        <div class="btn-row">
+            <button id="delete-btn" onclick="clearResult()">C</button>
+            <button  onclick="appendToOperation('(')">(</button>
+            <button  onclick="appendToOperation(')')">)</button>
+            <button id="delete-btn" onclick="deleteLastValue()">del</button>
+
+        </div>
+        <div class="btn-row">
+            <button onclick="appendToOperation('+')">+</button>
+            <button onclick="appendToOperation('7')">7</button>
+            <button onclick="appendToOperation('8')">8</button>
+            <button onclick="appendToOperation('9')">9</button>
+        </div>
+        <div class="btn-row">
+            <button onclick="appendToOperation('-')">-</button>
+            <button onclick="appendToOperation('4')">4</button>
+            <button onclick="appendToOperation('5')">5</button>
+            <button onclick="appendToOperation('6')">6</button>
+        </div>
+        <div class="btn-row">
+            <button onclick="appendToOperation('*')">*</button>
+            <button onclick="appendToOperation('1')">1</button>
+            <button onclick="appendToOperation('2')">2</button>
+            <button onclick="appendToOperation('3')">3</button>
+        </div>
+        <div class="btn-row">
+            <button onclick="appendToOperation('/')">/</button>
+            <button onclick="appendToOperation('0')">0</button>
+            <button onclick="appendToOperation('.')">.</button>
+            <button onclick="calculateResult()">=</button>
+        </div>
+
+    </div>
+    <video src="assets/0_Mathematics_Physics_3840x2160.mp4" muted autoplay loop></video>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
